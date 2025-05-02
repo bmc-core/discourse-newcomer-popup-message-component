@@ -1,0 +1,55 @@
+.popup-banner {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-20px); /* 初始上方 */
+  background: #191f29;
+  border: 1px solid var(--header_primary-low-mid);
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 9999;
+  width: 600px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  opacity: 0;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.popup-banner.fade-in {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0); /* 滑下來 */
+}
+
+.popup-banner.fade-out {
+  opacity: 0;
+  transform: translateX(-50%) translateY(-20px); /* 再滑回去消失 */
+}
+
+button.signup-btn {
+  background: var(--tertiary);
+  color: var(--header_background);
+  cursor: pointer;
+  margin-top: 10px;
+  line-height: normal;
+  box-sizing: border-box;
+  padding: .5em .65em;
+  border: none;
+  border-radius: 4px;
+  margin-right: 2em;
+  &:hover,
+  &:focus {
+    background: rgb(35.3928571429, 186.5642857143, 245.8071428571);
+  }
+}
+
+button.not-now-btn {
+  background: rgba(0,0,0,0);
+  color: var(--header_primary-low-mid);
+  cursor: pointer;
+  margin-top: 10px;
+  line-height: normal;
+  box-sizing: border-box;
+  padding: .5em .65em;
+  border: none;
+  border-radius: 4px;
+}
