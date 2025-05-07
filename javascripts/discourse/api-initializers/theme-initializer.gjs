@@ -58,14 +58,14 @@ api.onPageChange(() => {
       <p style="text-align:center">
         <span style="font-size:20px">
           <span style="font-family:Arial,Helvetica,sans-serif">
-            Registering an account,
+            Create an account
           </span>
         </span>
       </p>
       <p style="text-align:center">
         <span style="font-size:20px">
           <span style="font-family:Arial,Helvetica,sans-serif">
-            then you can participate in replying and posting!
+            to start posting and joining the conversation!
           </span>
         </span>
       </p>
